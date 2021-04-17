@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+        <link rel="stylesheet" href="./login-page.css">
+        <script src="login-page.js"></script>
+    </head>
+
+    <body>
+        <div class="padding5"></div>  
+        <div class="card cardCss">
+            <div class="card-body">
+                <h4 class="card-title">Login</h4>
+                <div class="pt-3"></div>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input class="form-control" type="email" name="email" pattern="[a-z0-9.]+@[a-z0-9.]+\.[a-z]{3,4}$" id="email"  required autofocus>
+                       <span id="emailError" class="text-danger font-weight-regular"></span>
+                    </div>
+                    <div class="form-group">
+                            <label for="password">Password:
+                                    <a href="forgot-password.html" class="floatProp">
+                                        Forgot Password?
+                                    </a>
+                                </label>
+                        <input type="password" class="form-control" name="password" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="password" required>
+                          <span id="passwordError" class="text-danger font-weight-regular"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" name="remember">
+                            <label for="remember" class="custom-control-label">Remember Me</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                         <button type="submit" class="btn btn-primary btn-block" onclick="validation()">Login</button>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                         Don't have an account? <a href="./create-one.html">Create One</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+ 
+    </body>
+</html>
