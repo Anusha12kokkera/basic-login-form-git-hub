@@ -1,0 +1,39 @@
+.cardCss{
+    height: 75vh;
+    width: 33vw;
+     margin: auto; 
+     overflow: auto;
+}
+
+body{
+    font-size: 15px;
+}
+
+.padding5{
+    padding-top: 5%;
+}
+
+.padding15{
+    padding-top: 10%;
+}
+
+.heightChange{
+    height: 82vh !important;
+}
+
+.forgotHeightChange{
+    height:55vh !important;
+}
+
+@media screen and (max-width: 560px) {
+	.cardCss {
+		width: 80vh;
+		margin: auto;
+    }
+    
+    .floatProp{
+        right:0px;
+        float: right;
+        padding-left: 20px;
+    }
+}
